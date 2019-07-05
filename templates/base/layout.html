@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample</title>
+
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    </head>
+    <body>
+
+        <!-- <style>
+            body {
+                background-image: url("{% static 'images/pic1.jpg' %}")
+            }
+        </style> -->
+        <p>This is a sample html page.</p>
+
+        {% block content %}
+        {% endblock %}
+
+        <!-- <img src="{% static 'images\1.jpg' %}">  This is an example line to show how we can use the django templating to display it in the webpage--> 
+
+        
+
+        <script src="{% static 'js/slim.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    </body>
+</html>  
